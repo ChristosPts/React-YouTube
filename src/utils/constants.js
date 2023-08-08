@@ -16,7 +16,7 @@ import {
 
 export const logo = 'https://i.ibb.co/s9Qys2j/logo.png';
 
-const categories = [
+export const categories = [
   { name: 'New', icon: Home },
   { name: 'JS Mastery', icon: Code },
   { name: 'Coding', icon: Code },

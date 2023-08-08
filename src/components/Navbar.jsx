@@ -7,7 +7,7 @@ import SearchBar from './SearchBar'
 function Navbar() {
   return (
     <Stack direction = 'row' 
-           alignItems='center' p={2} 
+           alignItems='center' py={2} px={4} 
            sx={{ position: 'sticky', background: '#111', 
            top:0, justifyContent:'space-between' }}>
       <Link to='/' style={{display: 'flex', alignItems:'center'}}>
