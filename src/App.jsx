@@ -4,9 +4,9 @@ import { Box } from '@mui/material'
 
 import Navbar from './components/Navbar'
 import Feed from './components/Feed'
-import VideoDetails from './pages/VideoDetails'
-import ChannelDetails from './pages/ChannelDetails'
-import SearchFeed from './pages/SearchFeed'
+import VideoDetails from './components/VideoDetails'
+import ChannelDetails from './components/ChannelDetails'
+import SearchFeed from './components/SearchFeed'
 
 
 function App() {
