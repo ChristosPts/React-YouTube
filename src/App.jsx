@@ -4,16 +4,16 @@ import { Box } from '@mui/material'
 
 import Navbar from './components/Navbar'
 import Feed from './components/Feed'
-import VideoDetails from './components/VideoDetails'
-import ChannelDetails from './components/ChannelDetails'
-import SearchFeed from './components/SearchFeed'
+import VideoDetails from './pages/VideoDetails'
+import ChannelDetails from './pages/ChannelDetails'
+import SearchFeed from './pages/SearchFeed'
 
 
 function App() {
 
   return (
     <BrowserRouter>
-       <Box sx = {{backgroundColor: '#555'}} >
+       <Box sx = {{backgroundColor: '#555'}}  >
           <Navbar/>
         <Routes>
             <Route path = "/" exact element={<Feed/>}/>

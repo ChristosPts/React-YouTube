@@ -9,7 +9,7 @@ function Navbar() {
     <Stack direction = 'row' 
            alignItems='center' py={2} px={4} 
            sx={{ position: 'sticky', background: '#111', 
-           top:0, justifyContent:'space-between' }}>
+           top:0, justifyContent:'space-between', padding: {md:'16px 24px', xs:'16px'}, }}>
       <Link to='/' style={{display: 'flex', alignItems:'center'}}>
           <img src={logo} alt='logo' height={45} />
       </Link>      
