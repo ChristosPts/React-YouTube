@@ -6,7 +6,7 @@ import SearchBar from './SearchBar'
 
 function Navbar() {
   return (
-    <Stack direction = 'row' 
+    <Stack direction = 'row' zIndex='999'
            alignItems='center' py={2} px={4} 
            sx={{ position: 'sticky', background: '#111', 
            top:0, justifyContent:'space-between', padding: {md:'16px 24px', xs:'16px'}, }}>
