@@ -36,7 +36,7 @@ function Feed() {
       </Box>
 
       <Box py={3} px={5} sx={{ overflowY: 'auto', height: '90vh', flex: 2 }}>
-        <Typography variant='h4' fontWeight='bold' sx={{ color: 'white' }}>
+        <Typography variant='h4' fontWeight='bold' sx={{ color: 'white' }} my={2}>
           {selectedCategory} <span style={{ color: '#F31503' }}>Videos</span>
         </Typography>
         <Videos videos={videos} />

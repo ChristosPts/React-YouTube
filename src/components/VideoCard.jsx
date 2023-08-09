@@ -11,7 +11,7 @@ function VideoCard({ video: {id: {videoId}, snippet } }) {
     <Card sx = {{width: { xs: "300px"}}}>
       <Link to = {videoId ? `/video/${videoId}` : `/`}>
         <CardMedia 
-          image = {snippet?.thumbnails?.high?.url}
+          image = {snippet?.thumbnails?.medium?.url}
           alt = {snippet?.title} sx={{width: 300, height:170}}
         />
       </Link>
