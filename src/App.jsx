@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { Box } from '@mui/material'
 
 import Navbar from './components/Navbar'
-import Feed from './components/Feed'
+import Feed from './pages/Feed'
 import VideoDetails from './pages/VideoDetails'
 import ChannelDetails from './pages/ChannelDetails'
 import SearchFeed from './pages/SearchFeed'
@@ -13,7 +13,7 @@ function App() {
 
   return (
     <BrowserRouter>
-       <Box sx = {{backgroundColor: '#555'}}  >
+       <Box>
           <Navbar/>
         <Routes>
             <Route path = "/" exact element={<Feed/>}/>

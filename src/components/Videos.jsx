@@ -12,7 +12,7 @@ function Videos({videos, direction}) {
         {videos.map((item,index) => (
           <Box key = {index}> 
               {item.id.videoId && <VideoCard video={item}/>}
-              {item.id.channelId && <ChannelCard channelDetail={item} background="#999"/>}
+              {item.id.channelId && <ChannelCard channelDetail={item} background="#555"/>}
           </Box>
         ))}
     </Stack>

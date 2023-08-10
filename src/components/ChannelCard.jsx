@@ -40,12 +40,14 @@ function ChannelCard({ channelDetail, marginTop, background, renderAsLink = true
     </CardContent>
   );
 
+  console.log(channelDetail)
+
   return (
     <Box
       sx={{
-        borderRadius: '4px',
+        borderRadius: '8px',
         display: 'flex',
-        height: '270px',
+        height: '290px',
         background: background,
         justifyContent: 'center',
         alignItems: 'center',

@@ -26,7 +26,7 @@ function SearchFeed() {
   return (
     <Box py={3} px={5} sx={{ overflowY: 'auto', height: '90vh', flex: 2 }}>
       <Typography variant='h4' fontWeight='bold' sx={{ color: 'white' }} my={2}>
-        Search Results For <span style={{ color: '#F31503' }}> {searchTerm}</span>
+        Search Results For <span style={{ color: '#219fca' }}> {searchTerm}</span>
       </Typography>
       <Videos videos={videos} />
     </Box>

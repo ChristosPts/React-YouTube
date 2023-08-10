@@ -19,7 +19,7 @@ function SearchBar() {
   return (
     <Paper component="form"
            onSubmit={handleSubmit}
-           sx={{ borderRadius:20, border: '1px solid #e3e3e3', pl:2, boxShadow: 'none' }}>
+           sx={{ borderRadius:"10px", border: '2px solid #222', pl:1.5, boxShadow: 'none' }}>
         <input
             className='search-bar'
             placeholder='Search...'
@@ -27,7 +27,7 @@ function SearchBar() {
             onChange={(e) => setSearchTerm(e.target.value)}
         />
 
-        <IconButton type='submit' sx= {{p:'10px', color:'red'}}>
+        <IconButton type='submit' sx= {{p:'10px', color:'#219fca'}}>
             <SearchIcon></SearchIcon>
         </IconButton>
     </Paper>

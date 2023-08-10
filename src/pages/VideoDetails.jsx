@@ -18,7 +18,10 @@ function VideoDetails() {
     .then((data) => setVideoDetail(data.items[0]))
 
     fetchFromAPI(`search?part=snippet&relatedToVideoId=${id}&type=video`)
-      .then((data) => setRecVideos(data.items))
+    .then((data) => {
+      console.log(data.items);  
+      setRecVideos(data.items);
+    });
 
   }, [id])
 
