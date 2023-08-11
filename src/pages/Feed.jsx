@@ -15,24 +15,15 @@ function Feed() {
         setVideos(data.items);
       });
   }, [selectedCategory]);
-
-  useEffect(() => {
-    // Hide the body scrollbar
-    document.body.style.overflow = 'hidden';
-
-    // Restore the body scrollbar when the component unmounts
-    return () => {
-      document.body.style.overflow = 'auto';
-    };
-  }, []);
+ 
 
   return (
     <Stack sx={{ flexDirection: { sx: 'column', md: 'row' } }}>
-      <Box sx={{ height: { sx: 'auto', md: '92vh' }, borderRight: '1px solid #303030', px: { sx: 0, md: 3 }, overflowY: 'auto' }}>
+      <Box sx={{ height: { sx: 'auto', md: '89vh' }, borderRight: '1px solid #303030', px: { sx: 0, md: 3 },  overflowY: 'auto' }}>
         <SideBar selectedCategory={selectedCategory} setSelectedCategory={setSelectedCategory} />
       </Box>
 
-      <Box py={3} px={5} sx={{ overflowY: 'auto', height: '90vh', flex: 2 }}>
+      <Box py={3} px={5} sx={{ overflowY: 'auto', height: '89vh', flex: 2 }}>
         <Typography variant='h4' fontWeight='bold' sx={{ color: 'white' }} my={2}>
           {selectedCategory} <span style={{ color: '#219fca' }}>Videos</span>
         </Typography>
